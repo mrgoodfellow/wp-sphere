@@ -25,7 +25,7 @@ function sphere_func( $atts ) {
 //{$a['speed']}
 //{$b}
     return "<section class='container'>
-    <figure class='sphere'><span class='gradient'></span></figure>
+    <figure class='sphere'><span class='shadow'></span></figure>
   </section>
 <style>
 .sphere {
@@ -79,6 +79,7 @@ function sphere_func( $atts ) {
 
   100% {
     background-position: 0 0; } }
+
 </style>";
 }
 add_shortcode( 'sphere', 'sphere_func' );
