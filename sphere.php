@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name:  360 Sphere Images
-Plugin URI:   https://cssanimation.rocks/spheres/
-Description:  Thank you to CssAnimation.Rocks for the sphere CSS
+Plugin Name:  WordPress Sphere Plugin for displaying 360 Equirectangular Images
+Plugin URI:   Thanks to:  https://cssanimation.rocks/spheres/
+Description:  Thank you to CssAnimation.Rocks for the sphere CSS!
 Version:      2018314
 Author:       Goodfellow.us
 Author URI:   http://Goodfellow.us
