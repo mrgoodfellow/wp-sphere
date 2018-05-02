@@ -24,11 +24,13 @@ function sphere_func( $atts ) {
 //{$a['url']}
 //{$a['speed']}
 //{$b}
-    return "<section class='container'>
-    <figure class='sphere'><span class='shadow'></span></figure>
+	static $i=0;//counter
+	 $i++;
+    return "<section class='ball{$i}'>
+    <figure class='sphere{$i}'><span class='shadow{$i}'></span></figure>
   </section>
 <style>
-.sphere {
+.sphere{$i} {
   display: inline-block;
   width: {$a['size']}px;
   height: {$a['size']}px;
@@ -38,20 +40,20 @@ function sphere_func( $atts ) {
   -webkit-transform-style: preserve-3d;
   background: url('{$a['url']}') repeat-x;
   background-size: auto 100%;
-  -webkit-animation: spin-sphere {$a['speed']}s infinite linear;
-  -moz-animation: spin-sphere {$a['speed']}s infinite linear;
-  -o-animation: spin-sphere {$a['speed']}s infinite linear;
-  -ms-animation: spin-sphere {$a['speed']}s infinite linear;
-  animation: spin-sphere {$a['speed']}s infinite linear;
+  -webkit-animation: spin-sphere{$i} {$a['speed']}s infinite linear;
+  -moz-animation: spin-sphere{$i} {$a['speed']}s infinite linear;
+  -o-animation: spin-sphere{$i} {$a['speed']}s infinite linear;
+  -ms-animation: spin-sphere{$i} {$a['speed']}s infinite linear;
+  animation: spin-sphere{$i} {$a['speed']}s infinite linear;
 }
-@-moz-keyframes spin-sphere {
+@-moz-keyframes spin-sphere{$i} {
   0% {
     background-position: -{$b}px 0; }
 
   100% {
     background-position: 0 0; } }
 
-@-webkit-keyframes spin-sphere {
+@-webkit-keyframes spin-sphere{$i} {
   0% {
     background-position: 0 0; }
   100% {
@@ -59,21 +61,21 @@ function sphere_func( $atts ) {
 }
 
 
-@-o-keyframes spin-sphere {
+@-o-keyframes spin-sphere{$i} {
   0% {
     background-position: -{$b}px 0; }
 
   100% {
     background-position: 0 0; } }
 
-@-ms-keyframes spin-sphere {
+@-ms-keyframes spin-sphere{$i} {
   0% {
     background-position: -{$b}px 0; }
 
   100% {
     background-position: 0 0; } }
 
-@keyframes spin-sphere {
+@keyframes spin-sphere{$i} {
   0% {
     background-position: -{$b}px 0; }
 
